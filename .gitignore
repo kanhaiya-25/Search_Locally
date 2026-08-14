@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Backend data (uploads, sqlite db, faiss index, logs) — never commit
+# a student's actual uploaded documents or generated indexes.
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+backend/data/sqlite/*
+!backend/data/sqlite/.gitkeep
+backend/data/index/*
+!backend/data/index/.gitkeep
+backend/data/logs/
+
+# Env files
+.env
+backend/.env
+frontend/.env
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Evaluation output
+backend/evaluation/last_evaluation_report.json
+
+# Generated demo dataset (regenerate via scripts/generate_sample_documents.py)
+sample_documents/*
+!sample_documents/README.md
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Pytest cache
+.pytest_cache/
+
+# Editors / local tools
+.vscode/
+.idea/
+.claude/
